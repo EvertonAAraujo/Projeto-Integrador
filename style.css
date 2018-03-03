@@ -1,0 +1,16 @@
+hr {
+    border-width: 3px;
+    /*border-color: black;*/
+}
+
+#barra-pesquisa {
+    width: 480px;
+}
+
+img {
+    /*max-width: 100px;*/
+}
+
+.produtos-miniatura {
+    padding: 10px;
+}

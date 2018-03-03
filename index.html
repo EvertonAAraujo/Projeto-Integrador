@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Music Club</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="Images/logo.png" alt="Logotipo" style="max-width: 150px">
+            </div>
+            <div class="col-lg-7">
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search"
+                               id="barra-pesquisa">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
+                            Pesquisa
+                        </button>
+                    </form>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" class="btn btn-lg btn-primary" disabled><i class="fas fa-shopping-cart"></i>
+                    Carrinho
+                </button>
+
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Início</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cordas
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Percussão
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sopro
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Teclas/Pianos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Áudio
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acessórios
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Violão</a>
+                                    <a class="dropdown-item" href="#">Guitarra</a>
+                                    <a class="dropdown-item" href="#">Baixo</a>
+                                    <a class="dropdown-item" href="#">Violino</a>
+                                    <a class="dropdown-item" href="#">Amplificadores</a>
+                                    <a class="dropdown-item" href="#">Outros</a>
+                                    <a class="dropdown-item" href="#">Acessórios</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" class="btn btn-lg btn-primary" disabled><i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="col-lg-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="max-width:600px; width: 50%; margin-left: auto; margin-right: auto"
+                         class="d-block w-100"
+                         src="https://www.bemol.com.br/wcsstore/Bemol/images/catalog/1/8/4/184127/extras/m/184127_c.jpg"
+                         alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:black">Lançamento</h5>
+                        <p style="color:black">Só R$7.575,00 à vista</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="max-width:600px; width: 50%; margin-left: auto; margin-right: auto"
+                         class="d-block w-100" src="https://i.ytimg.com/vi/AvPNCgcMiz0/hqdefault.jpg"
+                         alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:red">Corre que ta barato</h5>
+                        <p style="color:red">Só R$17.000,00 à vista</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="max-width:600px; width: 50%; margin-left: auto; margin-right: auto"
+                         class="d-block w-100" class="d-block w-100"
+                         src="http://www.otempo.com.br/polopoly_fs/1.778617.1390583624!image/image.jpg_gen/derivatives/main-horizontal-photo-gallery-leading-fit_620/image.jpg"
+                         alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:red">Aproveite nossos usados</h5>
+                        <p style="color:red">Piano semi novo</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="col-lg-12">Novidades</h3>
+        <div class="col-lg-3 produtos-miniatura">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="Images/martin-d-100.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Martin D-100 Deluxe</h5>
+                    <a href="#" class="card-text">Modelo de comemoração <br>R$ 390.996,60</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 produtos-miniatura">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="Images/gib-lp-ver.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Gibson Les Paul Custom</h5>
+                    <a href="#" class="card-text">Modelo 2018<br>Blood Orange Fade<br>R$ 22.000,00</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="..." class="col-lg-12 d-flex justify-content-center">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+
+<footer class="container">
+    <div class="col-lg-12">
+        <p class="d-flex justify-content-center">Copyright&copy Music Club, Inc. - Todos Direitos Reservados 2018 &emsp;<a href="politica_privacidade.html">Política de
+            Privacidade</a>&ensp;|&ensp;<a href="http://www.planalto.gov.br/ccivil_03/Leis/L8078.htm">Direito do Consumidor</a></p>
+    </div>
+</footer>
+</body>
+</html>
