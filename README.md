@@ -1,4 +1,4 @@
-# Projeto-Integrador
+# Projeto Integrador
 Projeto de e-commerce responsivo para conclusão da matéria "Projeto Integrador 4 - Desenvolvimento de Sistemas Orientado a Web e Dispositivos Móveis".
 Que será desenvolvido ao longo do semestre.
 
@@ -13,7 +13,7 @@ Para a parte da interface basta um navegador para o funcionamento, preferencialm
 TODO
 
 # Construido com
-TODO;
+TODO
 
 # Versão
 Em desenvolvimento
