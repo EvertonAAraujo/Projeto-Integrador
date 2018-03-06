@@ -7,7 +7,7 @@ A interface será desenvolvida em HTML, CSS e Javascript somente a princípio e 
 ainda não foi definida nenhuma linguagem de programação. Está a ser definida pela equipe.
 
 # Pré-Requisitos
-Para a parte da interface basta um navegador para o funcionamento, preferencialmente utlilize o google chrome.
+Para a parte da interface basta um navegador para o funcionamento, recomenda-se a utilização do google chrome.
 
 # Teste de Softwares Utilizado
 TODO
