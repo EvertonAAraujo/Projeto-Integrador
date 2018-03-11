@@ -1,98 +1,141 @@
-hr {
-    border-width: 3px;
-    /*border-color: black;*/
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
-.hr-footer {
-    border-width: 1px;
+.w-100 {
+    max-height: 400px;
 }
 
-/*@media screen and (max-width: 370px) {*/
-#barra-pesquisa {
+.hr {
+    border-width: 2px;
+}
+
+.titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 5px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.card-img-top {
+    max-height: 14em;
+    max-width: 7em;
+    text-align: center;
+}
+
+.btn-header {
+    width: 130px;
+    margin-top: 15px;
+    /*margin-left: 25%;*/
+}
+
+.pesquisa {
     width: 400px;
-    /*max-width: 370px;*/
 }
 
-/*}*/
-
-img {
-    /*max-width: 100px;*/
+.lista {
+    display: inline;
 }
 
-.produtos-miniatura {
-    padding: 10px;
-}
-
-.btn-primary {
-    width: 140px;
-}
-
-.logotipo {
-    max-width: 150px;
-    border-radius: 7px;
-}
-
-.logotipo:hover {
-    filter: brightness(75%);
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+* {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-/*button {*/
-/*background-color: #4CAF50;*/
-/*color: white;*/
-/*padding: 14px 20px;*/
-/*margin: 8px 0;*/
-/*border: none;*/
-/*cursor: pointer;*/
-/*width: 100%;*/
-/*}*/
-
-button:hover {
-    opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
+.img-zoom-container {
     position: relative;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
 }
 
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 300px;
+    height: 300px;
+}
+
+.img-zoom-result {
+    visibility: hidden;
+    position: fixed;
+    margin-top: -25%;
+    margin-left: 25%;
+}
+
+.img-zoom-container:hover > .img-zoom-result {
+    visibility: visible;
+}
+
+/*Fale conosco*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=password], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
 .container {
-    padding: 16px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
+/*Login*/
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -111,13 +154,14 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button (x) */
+/* The Close Button */
 .close {
+    /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
     top: 0;
@@ -126,6 +170,7 @@ span.psw {
     font-weight: bold;
 }
 
+/* Close button on hover */
 .close:hover,
 .close:focus {
     color: red;
@@ -154,29 +199,4 @@ span.psw {
     to {
         transform: scale(1)
     }
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
-}
-
-.titulo-login {
-    margin-left: 47.5%;
-    margin-top: 10px;
-}
-
-.menu-navegacao {
-    position: fixed;
-}
-
-body {
-    background-color: #fff;
 }
