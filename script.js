@@ -165,3 +165,12 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+
+function aparecer() {
+    if(document.querySelector(".ctCredito").checked == true) {
+        alert("foi")
+        document.getElementsByClassName("ctCredito").style.display = "block";
+    }
+}
+
