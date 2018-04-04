@@ -152,7 +152,7 @@ function pesquisacep(valor) {
 
 //Função para botão voltar uma página
 function voltar() {
-    window.history.back();
+    window.history.back()
 }
 
 //Login
@@ -168,9 +168,25 @@ window.onclick = function (event) {
 
 
 function aparecer() {
-    if(document.querySelector(".ctCredito").checked == true) {
+    if (document.querySelector(".ctCredito").checked == true) {
         alert("foi")
         document.getElementsByClassName("ctCredito").style.display = "block";
     }
+}
+
+function alterarEnd() {
+    var rua = document.querySelector('#rua').value;
+    document.querySelector('#pEnd').innerHTML = rua;
+    var numero = document.querySelector('#numero').value;
+    document.querySelector('#pNumero').innerHTML = numero;
+    var cep = document.querySelector('#cep').value;
+    document.querySelector('#pCEP').innerHTML = cep;
+    var complemento = document.querySelector('#complemento').value;
+    document.querySelector('#pComplemento').innerHTML = complemento;
+    var bairro = document.querySelector('#bairro').value;
+    document.querySelector('#pBairro').innerHTML = bairro;
+    var cidade = document.querySelector('#cidade').value;
+    document.querySelector('#pCidade').innerHTML = cidade;
+    // alert(rua+numero+cep+complemento+bairro+cidade)
 }
 

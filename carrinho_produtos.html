@@ -110,7 +110,14 @@
 
 <main class="container">
     <div class="row">
-        <h1 class="d-flex justify-content-center col-lg-12">Carrinho</h1>
+        <h2 class="d-flex justify-content-center col-lg-12">Carrinho</h2>
+        <div class="col-lg-12">
+            <span class="d-flex justify-content-center col-lg-12 local" style="float: left">Produtos >&nbsp;<em
+                    class="enfatizacao"> Local de Entrega >Método de Pagamento</em></span>
+        </div>
+        <div class="col-lg-12">
+            <h4 class="d-flex justify-content-center col-lg-12">Confirme os produtos</h4>
+        </div>
         <section class="col-lg-12 ">
             <header class="col-lg-12">
                 <h2 class="col-lg-8 d-flex justify-content-center" style="float: left">Produto</h2>
@@ -134,6 +141,12 @@
                     <input type="number" max="20" min="1">
                 </div>
             </div>
+            <button class="btn btn-outline-primary bInfo bVoltar" type="submit" onclick="voltar()">Voltar</button>
+
+            <button class="btn btn-outline-primary bInfo" type="submit"
+                    onclick="window.location.href='carrinho_local_entrega.html'">Confirmar
+            </button>
+
 
         </section>
     </div>
