@@ -6,42 +6,69 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <header class="container">
     <section class="row">
         <div class="col-lg-8 d-flex justify-content-center">
-            <a href="index.html"><img src="images/logo.png" alt="Logotipo" class="logotipo" title="Voltar ao Home"></a>
+            <a href="index.html"><img src="../static/Images/logo.png" alt="Logotipo" class="logotipo"
+                                      title="Voltar ao Home"></a>
         </div>
         <div class="col-lg-2">
-            <button type="button" class="btn btn-outline-secondary btn-header"
-                    onclick="document.getElementById('id01').style.display='block'">Login
+            <button type="button" class="btn btn-outline-secondary btn-header" data-toggle="modal"
+                    data-target="#exampleModalCenter">
+                Login
             </button>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLongTitle">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group col-md-12">
+                                <label for="usuarioLogin">Usuário</label>
+                                <input name="usuarioLogin" type="text" class="form-control" id="usuarioLogin"
+                                       placeholder="Usuário" size="30" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="senhaLogin">Senha</label>
+                                <input name="senhaLogin" type="text" class="form-control" id="senhaLogin"
+                                       placeholder="Senha" size="30" required>
+                            </div>
+                            <div class="novoUsu">
+                                <label>Novo usuário? <a href="cadastro_usuario.html">Criar cadastro</a></label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary" >Entrar</button>
+                            </div>
+                        </div>
 
-            <div id="id01" class="modal col-lg-12"><span onclick="document.getElementById('id01').style.display='none'"
-                                                         class="close" title="Close Modal">&times;</span>
-
-                <form class="modal-content animate" action="#">
-                    <div class="container col-lg-4">
-                        <h1>Login</h1>
-                        <label for="uname"><b>Usuário</b></label>
-                        <input type="text" placeholder="Usuário" name="uname" id="uname" required>
-
-                        <label for="psw"><b>Senha</b></label>
-                        <input type="password" placeholder="Senha" name="psw" id="psw" required>
-
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn btn btn-primary" style="float: left;">Cancelar
-                        </button>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Login</button>
                     </div>
-
-                    <div class="container col-lg-4" style="background-color:#f1f1f1">
-                        <span class="psw">Esqueceu a <a href="#">Senha</a>?</span><br>
-                        <span class="psw">Criar <a href="cadastro_usuario.html">Conta</a></span>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
         <div class="col-lg-2">
@@ -156,13 +183,15 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/boss.jpg" alt="Primeiro Slide Boss Pedais">
+                    <img class="d-block w-100" src="../static/Images/boss.jpg" alt="Primeiro Slide Boss Pedais">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/gibson_flyingv_ad.jpg" alt="Segundo Slide FlyingV Gibson">
+                    <img class="d-block w-100" src="../static/Images/gibson_flyingv_ad.jpg"
+                         alt="Segundo Slide FlyingV Gibson">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/fender-tele-ad.jpg" alt="Terceiro Slide Fender Telecaster">
+                    <img class="d-block w-100" src="../static/Images/fender-tele-ad.jpg"
+                         alt="Terceiro Slide Fender Telecaster">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -185,9 +214,11 @@
             </div>
             <div class="card-deck">
                 <div class="card col-lg-3 col-md-6 col-sm-6">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -199,10 +230,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3 col-sm-6">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -214,10 +247,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -229,10 +264,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -247,10 +284,12 @@
             </div>
             <div class="col-lg-12" style="margin:10px"></div>
             <div class="card-deck">
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -262,10 +301,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -277,10 +318,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -292,10 +335,12 @@
                                 class="fas fa-shopping-cart"></i>&ensp;Add ao Carrinho</a>
                     </div>
                 </div>
-                <div class="card col-lg-3">
-                    <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                                      src="images/martin-d-100.jpg"
-                                                                                      alt="Violão Martin D-100"></a>
+                <div class="card col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
+                                                                                          src="../static/Images/martin-d-100.jpg"
+                                                                                          alt="Violão Martin D-100"></a>
+                    </figure>
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Martin D-100 Deluxe</h5>
@@ -325,7 +370,7 @@
     <hr class="hr col-lg-10">
     <p class="d-flex justify-content-center">Copyright&copy; Music Club, Inc. - Todos Direitos Reservados 2018 &emsp;<a
             href="politica_privacidade.html">Política de Privacidade</a>&ensp;|&ensp;
-        <a href="#">Sobre Nós</a>&nbsp;|&nbsp;<a href="fale_conosco.html">Fale Conosco</a>&nbsp;|&nbsp; <a
+        <a href="sobre_nos.html">Sobre Nós</a>&nbsp;|&nbsp;<a href="fale_conosco.html">Fale Conosco</a>&nbsp;|&nbsp; <a
                 href="http://www.planalto.gov.br/ccivil_03/Leis/L8078.htm">Direito do Consumidor</a></p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

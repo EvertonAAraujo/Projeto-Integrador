@@ -182,7 +182,11 @@ function alterarEnd() {
     var cep = document.querySelector('#cep').value;
     document.querySelector('#pCEP').innerHTML = cep;
     var complemento = document.querySelector('#complemento').value;
-    document.querySelector('#pComplemento').innerHTML = complemento;
+    if (complemento == "") {
+        document.querySelector('#pComplemento').innerHTML = "Sem complemento";
+    } else {
+        document.querySelector('#pComplemento').innerHTML = complemento;
+    }
     var bairro = document.querySelector('#bairro').value;
     document.querySelector('#pBairro').innerHTML = bairro;
     var cidade = document.querySelector('#cidade').value;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body onload="typeWriter()">
 <header class="container">
     <section class="row">
         <h2 style="display: none">Validação w3</h2>
@@ -130,24 +130,24 @@
     <section class="row">
         <div class="col-lg-1">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top i2" src="Images/martin-2.jpg" alt="Fundo Violão"
-                     onclick="document.querySelector('#myimage').src='Images/martin-2.jpg'">
+                <img class="card-img-top i2" src="../static/Images/martin-2.jpg" alt="Fundo Violão"
+                     onclick="document.querySelector('#myimage').src='../static/Images/martin-2.jpg'">
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top i1" src="Images/martin-1.jpg" alt="Detalher Inlay Freetboard"
-                     onclick="document.querySelector('#myimage').src='Images/martin-1.jpg'">
+                <img class="card-img-top i1" src="../static/Images/martin-1.jpg" alt="Detalher Inlay Freetboard"
+                     onclick="document.querySelector('#myimage').src='../static/Images/martin-1.jpg'">
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top i3" src="Images/martin-3.jpg" alt="Head"
-                     onclick="document.querySelector('#myimage').src='Images/martin-3.jpg'">
+                <img class="card-img-top i3" src="../static/Images/martin-3.jpg" alt="Head"
+                     onclick="document.querySelector('#myimage').src='../static/Images/martin-3.jpg'">
             </div>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top i4" src="Images/martin-4.jpg" alt="Detalhe tarraxa"
-                     onclick="document.querySelector('#myimage').src='Images/martin-4.jpg'">
+                <img class="card-img-top i4" src="../static/Images/martin-4.jpg" alt="Detalhe tarraxa"
+                     onclick="document.querySelector('#myimage').src='../static/Images/martin-4.jpg'">
             </div>
         </div>
         <div class="col-lg-5 img-zoom-container">
-            <img id="myimage" src="Images/martin-0.jpg" alt="Violão Martin D-100 Deluxe">
+            <img id="myimage" src="../static/Images/martin-0.jpg" alt="Violão Martin D-100 Deluxe">
             <div id="myresult" class="img-zoom-result"></div>
         </div>
 
@@ -162,7 +162,7 @@
             </section>
             <label>Cor</label>
             <form action="#">
-                <input type="radio" name="cor" value="natural"> Natural<br>
+                <input type="radio" name="cor" value="natural" checked> Natural<br>
             </form>
             <a href="#" class="btn btn-primary"><i
                     class="fas fa-shopping-cart"></i>&ensp;Adicionar ao Carrinho</a>
@@ -190,13 +190,31 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <p>Para comemorar o marco de seu milionésimo violão, C.F. Martin & Co. criou uma edição espetacular
-                    comemorativa.</p>
-                <p>O D-100 Deluxe combina tons raros e elaborados inlays num exemplo deslumbrante da arte de criar
-                    violões. Simplesmente, esta obra-prima é um dos modelos mais bonitos que Martin já ofereceu.</p>
-                <p>Levou aproximadamente 6 mêses para a confecção de cada um dos violões criados. Foi uma edição
-                    limitada com apenas 50 exemplares.</p>
+                <p id="demo"></p>
+                <!--<p>Para comemorar o marco de seu milionésimo violão, C.F. Martin & Co. criou uma edição espetacular-->
+                    <!--comemorativa.</p>-->
+                <!--<p>O D-100 Deluxe combina tons raros e elaborados inlays num exemplo deslumbrante da arte de criar-->
+                    <!--violões. Simplesmente, esta obra-prima é um dos modelos mais bonitos que Martin já ofereceu.</p>-->
+                <!--<p>Levou aproximadamente 6 mêses para a confecção de cada um dos violões criados. Foi uma edição-->
+                    <!--limitada com apenas 50 exemplares.</p>-->
             </div>
+            <script>
+                var i = 0;
+                var txt = 'Para comemorar o marco de seu milionésimo violão, C.F. Martin & Co. criou uma edição espetacular ' +
+                    'comemorativa. O D-100 Deluxe combina tons raros e elaborados inlays num exemplo deslumbrante da arte de criar ' +
+                    'violões. Simplesmente, esta obra-prima é um dos modelos mais bonitos que Martin já ofereceu. ' +
+                    'Levou aproximadamente 6 mêses para a confecção de cada um dos violões criados. Foi uma edição ' +
+                    'limitada com apenas 50 exemplares.';
+                var speed = 45; /* The speed/duration of the effect in milliseconds */
+
+                function typeWriter() {
+                    if (i < txt.length) {
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <table class="table table-striped">
                     <tbody>
@@ -248,7 +266,7 @@
     <div class="card-deck">
         <div class="card col-lg-3">
             <a href="produto.html" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                              src="images/martin-d-100.jpg"
+                                                                              src="../static/Images/martin-d-100.jpg"
                                                                               alt="Violão Martin D-100"></a>
             <hr>
             <div class="card-body">
@@ -263,7 +281,7 @@
         </div>
         <div class="card col-lg-3">
             <a href="#" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                   src="images/martin-d-100.jpg"
+                                                                   src="../static/Images/martin-d-100.jpg"
                                                                    alt="Violão Martin D-100"></a>
             <hr>
             <div class="card-body">
@@ -278,7 +296,7 @@
         </div>
         <div class="card col-lg-3">
             <a href="#" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                   src="images/martin-d-100.jpg"
+                                                                   src="../static/Images/martin-d-100.jpg"
                                                                    alt="Violão Martin D-100"></a>
             <hr>
             <div class="card-body">
@@ -293,7 +311,7 @@
         </div>
         <div class="card col-lg-3">
             <a href="#" class="d-flex justify-content-center"><img class="card-img-top"
-                                                                   src="images/martin-d-100.jpg"
+                                                                   src="../static/Images/martin-d-100.jpg"
                                                                    alt="Violão Martin D-100"></a>
             <hr>
             <div class="card-body">
