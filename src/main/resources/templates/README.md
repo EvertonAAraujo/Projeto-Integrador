@@ -20,3 +20,9 @@ Em desenvolvimento
 
 # Autores
 Everton Aparecido de Araújo
+
+Magno Veras
+
+Mayra de Jesus Pereira
+ 
+Pedro Lucas Cruz
