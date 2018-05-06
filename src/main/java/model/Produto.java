@@ -1,21 +1,48 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import java.math.BigDecimal;
 
-import org.hibernate.annotations.ValueGenerationType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Digits;
+
 
 @Entity
+@Table(name = "TB-PRODUTO")
 public class Produto {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_PRODUTO")
 	private int id;
+
+	@Column(name = "MARCA", length = 100, nullable = false)
 	private String marca;
+
+	@Column(name = "MODELO", length = 100, nullable = false)
 	private String modelo;
+
+	@Column(name = "COR", length = 100, nullable = false)
 	private String cor;
+
+	@Column(name = "CATEGORIA", length = 100, nullable = false)
 	private String categoria;
+
+	@Column(name = "DESC", length = 1000)
 	private String descricao;
-	private double vCompra;
-	private double vVenda;
+
+	@Digits(integer = 6, fraction = 2)
+	@Column(name = "VL_COMPRA", precision = 6, scale = 2, nullable = false)
+	private BigDecimal vCompra;
+	
+	@Digits(integer = 6, fraction = 2)
+	@Column(name = "VL_VENDA", precision = 6, scale = 2, nullable = false)
+	private BigDecimal vVenda;
+	
+	@Column(name = "ESTOQUE", precision = 6, scale = 0, nullable = false)
 	private int estoque;
 
 	public int getId() {
@@ -66,19 +93,20 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public double getvCompra() {
+
+	public BigDecimal getvCompra() {
 		return vCompra;
 	}
 
-	public void setvCompra(double vCompra) {
+	public void setvCompra(BigDecimal vCompra) {
 		this.vCompra = vCompra;
 	}
 
-	public double getvVenda() {
+	public BigDecimal getvVenda() {
 		return vVenda;
 	}
 
-	public void setvVenda(double vVenda) {
+	public void setvVenda(BigDecimal vVenda) {
 		this.vVenda = vVenda;
 	}
 
